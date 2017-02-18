@@ -1,0 +1,125 @@
+
+h1{
+  font-style: italic;
+  text-align:center;
+
+}
+p:hover{
+  color: blue;
+
+}
+h4{
+  font-style: italic;
+  text-align:center;
+}
+#Youtheuser{
+  display:none;
+}
+#rubyimg, #phpimg, #javaimg, #designimg, #csharpimg {
+  display:none;
+}
+br {
+  font:white;
+}
+img {
+  width:10%;
+}
+.jumbotron {
+  margin-bottom: 2px;
+  height: 300px;
+  color: black;
+  text-align:left;
+  text-shadow: black 0.2em 0.2em 0.9em;
+  background:transparent;
+
+}
+.questions1 {
+  color:white;
+}
+.nameinputform {
+  color:black;
+  font-family: sans-serif;
+  text-align:left;
+  text-shadow: black 0.1em 0.1em 0.9em;
+}
+p{
+  color:black;
+  text-shadow: black 0.2em 0.2em 0.9em;
+}
+label{
+  font-style: italic;
+  text-align:center;
+}
+#Youtheuser{
+  text-align: center;
+  display:none;
+}
+span{
+  font:white;
+}
+#Name{
+  text-align: left;
+  font-size: 18px;
+
+}
+#hidegreatnews{
+  display:none;
+}
+
+ol#menu li {
+    display:inline;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important;
+    padding-bottom:0 !important;
+    height: 28px;
+}
+.navbar {min-height:28px !important;}
+
+.jumbotron {
+    padding: 0.01em 0.01em;
+    h1 {
+        font-size: 2em;
+    }
+}
+
+
+ .logodesign{
+    width: 100px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-left:
+}
+
+.right {
+    position: absolute;
+    right: 0%;
+    width: 100;
+    border: 3px solid #000000;
+    padding: 5px;
+}
+
+.greatnewsman {
+  font-style: italic;
+  font-size: 24px;
+}
+.btn {
+  padding: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+@media screen and (max-width:500px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+#backgroundimg{
+  opacity: .85;
+}
+#end{
+  font-family: sans-serif;
+  color: blue;
+  margin-bottom: 15px;
+}

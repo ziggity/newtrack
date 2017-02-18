@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Epicodus Track Suggester</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="js/styles.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body background="http://freshwallpapers.info/uploads/posts/2016-03/25_white_abstract.jpg" id="backgroundimg">
+    <div class="container fluid">
+      <nav class="navbar navbar-header navbar-default">  <img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/56/epicodus_logo.png" alt="Epicodus Logo" class="logodesign right">
+        <a class="navbar-brand" href="https://www.epicodus.com/become-a-programmer/?SQF_SOURCE=gcpc_sea_brand&gclid=CJf9gK-OmNICFUKTfgodwccEhA">Epicodus -"Learn to code for less!" Below are the links to the courses Epicodus offers in Seattle / Portland</br></a>
+        <ul class="nav navbar-nav ">
+          <li><a href="http://www.epicodus.com/c-sharp">C#/.NET</a></li>
+          <li><a href="http://www.epicodus.com/css">CSS/Design</a></li>
+          <li><a href="http://www.epicodus.com/java">Java/Android</a></li>
+          <li><a href="http://www.epicodus.com/php">PHP/Drupal</a></li>
+          <li><a href="http://www.epicodus.com/ruby">Ruby/Rails</a></li>
+        </ul>
+    </div>
+      </nav> <!--  fluid nav -->
+    <div class="container">
+      <div class="row">
+        <div class ="jumbotron">
+          <h1>Epicodus Track Selector</h1>
+          <h4>Let's use machine learning to figure out which Epicodus track is a good fit for you!</h4>
+          <h4>Pick one that suits you best from each of these dropdown menus</h4>
+          <form id="formid">
+            <div class="content">
+              <div class="form-group text-center pagination-centered">
+                <label for="Name" class="well nameinputform">Enter your name below:
+                <input id="Name" class="form-control" type="text">
+                </label>
+              </div>
+              <div class="answersfromuser">
+                <p class="questions1"><b>1.</b> Do you like building out the frontend (the things you see on the webpage), or do you prefer backend algorithims (mathmatical equations and logic/APIs)?<p>
+                <select class="form-control" id="question1">
+                  <option value="1">A. Frontend (webpage design / layout / user interaction)</option>
+                  <option value="2">B. Backend (mathmatical equations, logic, APIs, controlling the computer to your will!)</option>
+                  <option value="3">C. Either option is fine with me (still deciding which path to take, or I might end up going full-stack developer path one day)</option>
+                </select>
+              </div>
+              <div class="answersfromuser">
+                <p class="questions1"><b>2.</b> Which types of companies are compelling to you?<p>
+                <select class="form-control" id="question2">
+                  <option value="1">A. Small startup with limited budget, but allows you to be creative and wear many hats everyday, each day is different, and the people who work there love it because of the awesome culture.</option>
+                  <option value="2">B. Huge corporations with well documented protocols in place, stock options, well paid salaries, benefits, vacation included, but long hours, and lacking a consistant culture.</option>
+                  <option value="3">C. Midsized company that has a mix of both worlds listed above</option>
+                </select>
+              </div>
+              <div class="answersfromuser">
+                <p class="questions1"><b>3.</b> How would you rank each software language in terms of technical specs?<p>
+                <select class="form-control" id="question3">
+                  <option value="1">A. Flexible language, which is growing more and more with open source contributors, can use many 3rd party extenions with ease.</option>
+                  <option value="2">B. Language is huge, well written, but contains you in it's own environment, and forces you to use all their proprietary tools. </option>
+                  <option value="3">C. Super secure langauage, great for building websites quickly, and deploying them on a bootstrap budget.</option>
+                </select>
+              </div>
+              <div class="answersfromuser">
+                <p class="questions1"><b>4.</b> Which one do you rank highest out of the 3 below?<p>
+                <select class="form-control" id="question4">
+                  <option value="1">A. Bleeding edge technology with untested methods, but could prove to be leading contender in future, stand out and be an innovator. .</option>
+                  <option value="2">B. Popular language with vast resources available, can't beat em, join em' </option>
+                  <option value="3">C. Either option is fine with me.</option>
+                </select>
+              </div>
+              <div class="answersfromuser">
+                <p class="questions1"><b>5.</b> Pick one below that is most precious  to you?<p>
+                <select class="form-control" id="question5">
+                  <option value="1">A. User experience and interaction with graphical user interface.</option>
+                  <option value="2">B. How the website functions as a whole.</option>
+                  <option value="3">C. Building apps for mobile platforms.</option>
+                </select>
+              <button type="submit" class="btn btn-info center-block">Submit to find out which course is for you!!</button>
+          </form>
+          <div id="hidegreatnews" class="well greatnewsman"><span>Good news, after crunching the numbers's, we're happy to present the best courses for <span id="Youtheuser"></span>:</span>
+
+              <p id="rubyimg"> <img src = "http://mysandboxonline.dia-box.ru/wp-content/uploads/2016/03/ruby_and_rails.jpg" alt = "rubyrails"> <br>Ruby/Rails track is best for you based on the data since you chose a lot of A's. Ruby is great for building interactive web apps, gathering input from users, dynamic content, and simply common tasks. It's most popular with startups for building out quickly (Ruby for the frontend and backend with Rails framework). </br></p>
+
+              <p id="phpimg"> <img src = "http://allabouttodd.com/sites/default/files/styles/large/public/article_images/drupal-php.jpg?itok=KFiigr8x" alt = "phpdrupal"> <br>PHP/Drupal track is best for you based on the data since you chose a lot of B's. PHP/Drupal is super secure, the US goverment uses it for their website, Wordpress is built on PHP, for super fast deployment for content heavy websites. Content Management Systems like Wordpress, use PHP to create large complex websites. This is great for building out brands and sites on your own.</br></p>
+
+              <p id="javaimg"> <img src ="http://triposoft.com/wp-content/uploads/2014/05/JAVAANDROID.jpg" alt="java"> <br>Java/Android track is best for you based on the data since you chose a lot of C's. Java is amazing for corporate enterprises because it's most popular language, used in everything from Android apps, GUI, to software applications. Enterprise level companies love Java for it's high performance and vast popularity with developers. Some software that used Java are: adobe photoshop, video games, tax software.</br></p>
+
+              <p id="designimg"> <img src = "https://www.sololearn.com/Uploads/html-css.jpg" alt = "Design"> <br>CSS/Design track is best for you based on the data. CSS/Design is great for visual people, such as photographers, video editors, artists in general. Here is where you can design for mobile first, or focus on desktop and scale down from there! Use your art skills to create a wonderful experience for users to view and interact with an elegant website.</br></p>
+
+              <p id="csharpimg"> <img src ="https://assets.ec.quoracdn.net/main-qimg-133cb67a060cbb79455b67bd45a6ea6a" alt="csharp"> <br>C#/.NET track is best for you based on the data based on the data since you chose a mix of B's and C's. C#/.NET is a huge software language with a plethora of uses, but keep in mind Microsoft built C# shortly after Java was released, and so it was released with a caveat that it can only be used with other Microsoft technologies as to hinder the competition, and force developers to use all of their products. Different thinking compared to Java where you can work in an open source environment. Although Microsoft has released C# to be open source, not all of their products are open source, so it's not really true to the cause. Best for giant corporations who want secure, and well written software to build programs like adobe photoshop. </br></p>
+
+          </div><!-- hide great-->
+              </div>
+          <div id="end" class="well">
+            <p>Website created by <a href="https://github.com/ziggity" target="_blank">Zach Beecher (click me to get to github) <img src="https://pbs.twimg.com/profile_images/738435601767104517/V_NPP7rh_400x400.jpg" alt="zach beecher"</a></p>
+          </div>
+            </div><!-- classcontent -->
+          </div><!-- class-jumbotron -->
+        </div><!-- class-row -->
+      </div><!-- class-container -->
+  </body>
+</html>
